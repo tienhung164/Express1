@@ -23,8 +23,18 @@ module.exports.postComm=function(req,res){
     req.body.time=time;
    // console.log(req.body.img);
     let tmp=req.body.mess
-    if(tmp===undefined)
+    if(req.file)
            req.body.img=req.file.path.split('\\').slice(1).join('\\');
+    if(tmp===undefined&& !req.file)
+       {
+            res.redirect('/communiti');
+            return;
+       }
+       if(tmp===''&& !req.file)
+       {
+            res.redirect('/communiti');
+            return;
+       }
     db.get('comm').push(req.body).write();
     res.redirect('/communiti');
 }

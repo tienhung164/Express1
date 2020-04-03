@@ -44,6 +44,10 @@ module.exports.postSignin=function(req,res,next){
       {
           errs.push('Zip-code is not corect!')
       } 
+    if(!req.file)
+      {
+        errs.push('Pleas choose avatar!')
+      }
     if(errs.length) 
       {
             res.render('auth/signin.pug',{
