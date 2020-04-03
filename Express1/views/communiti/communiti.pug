@@ -1,0 +1,114 @@
+extends ../base.pug
+block title
+    Title Communiti
+block style
+ style.
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+    body {
+    background: linear-gradient(-45deg, #5dd7ef, #b490ca);
+    }
+    .box {
+    background-color: #fff;
+    margin-top:10px;
+    padding: 30px 60px;
+    border: 1px solid;
+    border-radius: 1rem;
+    box-shadow: 0 1px 4px 0 rgb(0, 0, 0, 0.15);
+    }
+    .container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    .btn-primary {
+    background-color: #6ec6ca;
+    }
+    .btn-primary:hover {
+    background-color: #0b979d;
+    }
+    .mainbox {
+     width: 950px;
+     margin-left: 47px;
+     height: 24vmax;
+     overflow-y:auto;
+     position: relative;
+    }
+    input[type="file"] {
+    display: none;
+    }
+    .custom-file-upload {
+    border: 1px solid #6ec6ca;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-left: 47px;
+    border-radius: 2rem;
+    cursor: pointer;
+    }    
+    .mainbox h7{
+       margin-left:5px;
+       padding:8px 20px;
+       border-radius:2rem;
+       margin-top:4px;
+       margin-bottom:4px;
+       background-color: #F1F0F0;
+       font-size:16px;
+       font-weight: normal;
+
+    }
+    .mainbox h8{
+       margin-right:5px;
+       padding:8px 20px;
+       border-radius:2rem;
+       margin-top:5px;
+       margin-bottom:0px;
+       background-color: #0099FF;
+       color:#ffffff;
+       font-size:16px;
+       font-weight: normal;
+
+
+    }        
+  
+block content
+   
+   .container
+    if err
+       p.alert.alert-danger.position-absolute.z-index-1=err
+    .box
+      h1 Talk with friends
+        .mainbox#messageBody
+          each user in users 
+            if user.img&&user.name===userLocal.name
+              div.d-flex.justify-content-end
+                img.mr-5(src=user.img,style='width:130px;height:130px;margin-bottom:5px;margin-right: 5px;')  
+            if user.img&&user.name !== userLocal.name  
+             div.d-flex.justify-content-start.mt-2.mb-2
+               img(src=user.avatar, title=user.name,style='width: 42px;height:42px;margin-right: 5px;border-radius: 50%;margin-bottom:5px')
+               img(src=user.img,style='width:130px;height:130px;margin-bottom:5px;margin-right: 5px;')  
+
+            if user.name !== userLocal.name&& !user.img
+             div.d-flex
+               img(src=user.avatar, title=user.name,style='width: 42px;height:42px;margin-right: 5px;border-radius: 50%;margin-bottom:5px')
+               h7=user.mess 
+            if user.name===userLocal.name&& !user.img   
+              div.d-flex.justify-content-end
+                   h8=user.mess 
+              
+      form.d-flex(method="POST" enctype="multipart/form-data")
+        div
+          img(src=userLocal.avatar,style='width: 42px;height:42px;margin-right: 5px;border-radius: 50%;margin-bottom:5px')
+        div
+          input.form-control(type='text', style='width: 65vw;', name='mess')
+        div(style='text-align:right')
+          button.btn.btn-primary(type='submit') Send
+      form(method="POST" enctype="multipart/form-data")
+        label.custom-file-upload
+          input(type='file' name='img')
+          i.fa.fa-cloud-upload Choose img
+          button(type='submit', style='background-color: #ccc;') Send
+   script.
+     var messageBody = document.querySelector('#messageBody');
+     messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;        
+    

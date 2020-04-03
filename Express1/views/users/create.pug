@@ -1,0 +1,20 @@
+extends ../base.pug
+
+block content
+ .container
+   br
+   h1 Create here
+   if errs
+    each err in errs 
+      .alert.alert-danger=err
+   form(action='#', method='POST')
+     .form-group
+       label(for='exampleInputEmail1') Name:
+       input.form-control(type='text', name='name' value=values? values.name:'')
+     .form-group
+       label(for='exampleInputPassword1') Age
+       input.form-control(type='text', name='age')
+     .form-group
+       label(for='exampleInputPassword1') Sdt:
+       input.form-control(type='text', name='sdt')
+     button.btn.btn-primary(type='submit') Submit

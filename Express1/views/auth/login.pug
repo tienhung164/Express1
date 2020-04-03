@@ -1,0 +1,18 @@
+extends ../base.pug
+
+block content
+ .container
+   br
+   h1 Login here:
+   if errs
+    each err in errs 
+      .alert.alert-danger=err
+   form(action='#', method='POST')
+     .form-group
+       label Email:
+       input.form-control(type='email', name='email' value=values? values.email:'')
+     .form-group
+       label Passworld:
+       input.form-control(type='text', name='pass')
+     button.btn.btn-primary(type='submit') Login
+     a.ml-3(href='/auth/signin') Signin_here!

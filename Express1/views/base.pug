@@ -1,0 +1,24 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  block title
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+  <link rel="icon" href="img/logo1.png">
+  block style
+body
+.container-fuluid
+ nav.navbar.navbar-expand-lg.navbar-light.bg-light
+   a.navbar-brand(href='/') Home
+   #navbarNav.collapse.navbar-collapse
+     ul.navbar-nav
+       li.nav-item.active
+         a.nav-link(href='/users') Users
+           span.sr-only (current)
+       li.nav-item.active
+         a.nav-link(href='/communiti') Communiti
+           span.sr-only (current)    
+   if  userLocal    
+     a.navbar-brand(href='#') #{userLocal.name}
+     a.navbar-brand(href='/auth/logout') Logout_
+
+block content

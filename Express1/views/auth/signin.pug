@@ -1,0 +1,78 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  title Sign up
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+body 
+  style.
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+    body {
+    background: linear-gradient(-45deg,#5dd7ef,#b490ca);
+    margin-top: 50px;
+    font-family: sans-serif;
+    }
+    .col-md-6 {
+    background-color:#fff;
+    padding: 30px 60px;
+    border: 1px solid;
+    border-radius: 3%;
+    box-shadow: 2px 2px gray;
+    }
+    .container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    .container label {
+    width: 130px;
+    }
+    .form-inline {
+    padding-bottom: 15px;
+    }
+    .form-inline input[type="number"] {
+    display: inline-block;
+    width: 17%;
+    }
+    .btn-primary{
+    background-color:#6ec6ca;
+    }
+    .btn-primary:hover{
+    background-color: #0b979d;
+    }
+.container
+  
+  .col-md-6.offset-md-3
+    h1  Sign up
+    if errs
+     each err in errs 
+      .alert.alert-danger=err
+    form( action='#' method='POST' enctype="multipart/form-data")
+      .form-inline
+        label Email :
+        input.form-control(type='email', placeholder='Enter email', name='email')
+      .form-inline
+        label Password :
+        input.form-control(type='password', placeholder='Enter password', name='pass')
+      .form-inline
+        label Name:
+        input.form-control(type='sdt', placeholder='Enter name', name='name') 
+      .form-inline
+        label Sdt:
+        input.form-control(type='sdt', placeholder='Enter sdt', name='sdt')
+      .form-inline
+        label Age:
+        input.form-control(type='age', placeholder='Enter age', name='age')
+      .form-inline
+        label Zip code:
+        input.form-control(type='text', placeholder='Enter zip-code', name='zipcode')
+      .form-inline
+        label Avatar:
+        input(type='file',name='avatar')
+      div(style='text-align:right')
+        button.btn.btn-primary(type='submit') Submit
+  br
+  br

@@ -1,0 +1,29 @@
+extends ../base.pug
+block title
+  Title Member
+block content
+ .container
+   .d-flex.ml-4
+     h1 List members
+     a.badge.badge-secondary.ml-2.h-30(href='/users/create') Create new
+   br
+   div
+     form.d-flex(action='/users/search', method='GET')
+       input.form-control(type='text', name='q')
+       button.btn.btn-primary.ml-2 Search
+     table.table
+       tr 
+         th Avatar
+         th Name
+         th Phone
+         th Age
+         th Action
+       each users in user 
+          tr
+           th
+             img(src=users.avatar,width='50',height="50",style='border-radius:50%')
+           th=users.name
+           th=users.sdt
+           th=users.age  
+           th 
+            a(href='/users/'+users.id) View 

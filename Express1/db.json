@@ -1,0 +1,196 @@
+{
+  "users": [
+    {
+      "email": "hungvt164@gmail.com",
+      "pass": "123456",
+      "name": "Vũ Tiến Hưng ",
+      "sdt": "0987654321",
+      "age": "19",
+      "zipcode": "123456",
+      "id": "D1FZp-hTz",
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c"
+    },
+    {
+      "email": "id681587@outlook.com",
+      "pass": "123456",
+      "name": "vu tien hung ",
+      "sdt": "0987654321",
+      "age": "19",
+      "zipcode": "123456",
+      "id": "8xTXUZuX3",
+      "avatar": "uploads\\2f666ee19c647ee6aa8288128edfc16b"
+    },
+    {
+      "email": "nam6626664266@gmail.com",
+      "pass": "6626664266",
+      "name": "nam",
+      "sdt": "0987485345",
+      "age": "19",
+      "zipcode": "123456",
+      "id": "DwNVX1kem",
+      "avatar": "uploads\\8662ea689d296367570e8d1e81398de4"
+    },
+    {
+      "email": "votiendat08112001@gmail.com",
+      "pass": "08112001",
+      "name": "Đạt",
+      "sdt": "0345805216",
+      "age": "18",
+      "zipcode": "123456",
+      "id": "rNn-W1gRj",
+      "avatar": "uploads\\5bbe01eaed5435ed0357e0d972992e62"
+    }
+  ],
+  "comm": [
+    {
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585842135672,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "22:42",
+      "img": "uploads\\f6cb03d56910057ea789abbfd0147fd7"
+    },
+    {
+      "mess": "to la vu tien hung",
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585843131951,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "22:58"
+    },
+    {
+      "mess": "to la vu tien hung",
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585843135914,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "22:58"
+    },
+    {
+      "mess": "alo",
+      "name": "vu tien hung ",
+      "sec": 1585843247791,
+      "avatar": "uploads\\2f666ee19c647ee6aa8288128edfc16b",
+      "time": "23:0"
+    },
+    {
+      "name": "vu tien hung ",
+      "sec": 1585843249730,
+      "avatar": "uploads\\2f666ee19c647ee6aa8288128edfc16b",
+      "time": "23:0"
+    },
+    {
+      "name": "vu tien hung ",
+      "sec": 1585843261349,
+      "avatar": "uploads\\2f666ee19c647ee6aa8288128edfc16b",
+      "time": "23:1"
+    },
+    {
+      "name": "vu tien hung ",
+      "sec": 1585843269560,
+      "avatar": "uploads\\2f666ee19c647ee6aa8288128edfc16b",
+      "time": "23:1"
+    },
+    {
+      "name": "vu tien hung ",
+      "sec": 1585843277087,
+      "avatar": "uploads\\2f666ee19c647ee6aa8288128edfc16b",
+      "time": "23:1"
+    },
+    {
+      "name": "vu tien hung ",
+      "sec": 1585843374380,
+      "avatar": "uploads\\2f666ee19c647ee6aa8288128edfc16b",
+      "time": "23:2",
+      "img": "uploads\\99931725ba3114dbfce0841ebd357dd8"
+    },
+    {
+      "name": "vu tien hung ",
+      "sec": 1585843387304,
+      "avatar": "uploads\\2f666ee19c647ee6aa8288128edfc16b",
+      "time": "23:3",
+      "img": "uploads\\56fe694a677c99062fa047568d92e913"
+    },
+    {
+      "mess": "alo ",
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585846127574,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "23:48"
+    },
+    {
+      "mess": "đạt",
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585846131036,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "23:48"
+    },
+    {
+      "mess": "hêy",
+      "name": "Đạt",
+      "sec": 1585846450356,
+      "avatar": "uploads\\5bbe01eaed5435ed0357e0d972992e62",
+      "time": "23:54"
+    },
+    {
+      "mess": "răng t nhắn bình thường ",
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585846505077,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "23:55"
+    },
+    {
+      "mess": "nhắn tin oke đó",
+      "name": "Đạt",
+      "sec": 1585846560134,
+      "avatar": "uploads\\5bbe01eaed5435ed0357e0d972992e62",
+      "time": "23:56"
+    },
+    {
+      "mess": "alo",
+      "name": "Đạt",
+      "sec": 1585846567674,
+      "avatar": "uploads\\5bbe01eaed5435ed0357e0d972992e62",
+      "time": "23:56"
+    },
+    {
+      "mess": "hello",
+      "name": "Đạt",
+      "sec": 1585846607037,
+      "avatar": "uploads\\5bbe01eaed5435ed0357e0d972992e62",
+      "time": "23:56"
+    },
+    {
+      "mess": "hello",
+      "name": "Đạt",
+      "sec": 1585846607833,
+      "avatar": "uploads\\5bbe01eaed5435ed0357e0d972992e62",
+      "time": "23:56"
+    },
+    {
+      "mess": "",
+      "name": "Đạt",
+      "sec": 1585846609610,
+      "avatar": "uploads\\5bbe01eaed5435ed0357e0d972992e62",
+      "time": "23:56"
+    },
+    {
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585846712260,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "23:58",
+      "img": "uploads\\f8077d129a1deaf709ccf3154170558f"
+    },
+    {
+      "mess": "",
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585846721785,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "23:58"
+    },
+    {
+      "mess": "chưa có real-time",
+      "name": "Vũ Tiến Hưng ",
+      "sec": 1585846743392,
+      "avatar": "uploads\\bb24c8d923820a054444e31e215e020c",
+      "time": "23:59"
+    }
+  ]
+}
